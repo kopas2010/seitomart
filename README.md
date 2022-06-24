@@ -1,24 +1,26 @@
-# README
+# 政党マート
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## サイト概要
+### サイトテーマ
+選挙情報を調べたり、投票先を選んだりするのに利用するためのサイト
+候補者の情報や経歴、施策などをまとめた候補者ページなどを作成予定
 
-Things you may want to cover:
+### テーマを選んだ理由
+- 候補者の情報を調べる機会がない
+- 政治離れ防止
 
-* Ruby version
+### ターゲットユーザ
+- 投票先に悩んでる人
 
-* System dependencies
+### 主な利用シーン
+- 選挙前
 
-* Configuration
+## 設計書
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 開発環境
+- OS：Linux(CentOS)
+- 言語：HTML,CSS,JavaScript,Ruby,SQL
+- フレームワーク：Ruby on Rails
+- JSライブラリ：jQuery
+- IDE：Cloud9

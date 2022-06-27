@@ -1,0 +1,2 @@
+module Voter::HomesHelper
+end

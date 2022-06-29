@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  root to: "homes#top"
+
   devise_for :candidates, skip: [:passwords], controllers: {
   registrations: "candidate/registrations",
   sessions: 'candidate/sessions'
@@ -11,6 +14,6 @@ Rails.application.routes.draw do
   devise_for :admins, skip: [:registrations, :passwords], controllers: {
   sessions: "admin/sessions"
 }
-  get 'homes/top'
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

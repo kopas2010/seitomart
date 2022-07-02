@@ -16,12 +16,29 @@
         <li>
           <%= link_to "ログアウト", destroy_voter_session_path, method: :delete %>
         </li>
+      <% elsif candidate_signed_in? %>
+        <li>
+          <%= link_to "ログアウト", destroy_candidate_session_path, method: :delete %>
+        </li>
+      <% elsif admin_signed_in? %>
+        <il>
+          <%= link_to "ログアウト", destroy_admin_session_path, method: :delete %>
+        </il>
       <% else %>
         <li>
-          <%= link_to "新規登録", new_voter_registration_path %>
+          <%= link_to "有権者新規ユーザー登録", new_voter_registration_path %>
         </li>
         <li>
-          <%= link_to "ログイン", new_voter_session_path %>
+          <%= link_to "候補者新規ユーザー登録", new_candidate_registration_path %>
+        </li>
+        <li>
+          <%= link_to "有権者ログイン", new_voter_session_path %>
+        </li>
+        <li>
+          <%= link_to "候補者ログイン", new_candidate_session_path %>
+        </li>
+        <li>
+          <%= link_to "管理者ログイン", new_admin_session_path %>
         </li>
       <% end %>
     </header>

@@ -14,15 +14,15 @@
     <header>
       <% if voter_signed_in? %>
         <li>
-          <%= link_to "ログアウト", destroy_voter_session_path, method: :delete %>
+          <%= render 'layouts/voter_header' %>
         </li>
       <% elsif candidate_signed_in? %>
         <li>
-          <%= link_to "ログアウト", destroy_candidate_session_path, method: :delete %>
+          <%= render 'layouts/candidate_header' %>
         </li>
       <% elsif admin_signed_in? %>
         <il>
-          <%= link_to "ログアウト", destroy_admin_session_path, method: :delete %>
+          <%= render 'layouts/admin_header' %>
         </il>
       <% else %>
         <li>
